@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+     <link rel="shortcut icon" href="#"/>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/scrollBar.css">
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="music-container">
+            <div class="music-info">
+                <h4 id="title"></h4>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <audio src="" id="audio"></audio>
+
+            <div class="img-container">
+                <img src="" id="cover" />
+            </div>
+
+            <div class="navigation">
+                <button id="prev" class="action-btn"><i class="fas fa-backward"></i></button>
+                <button id="play" class="action-btn action-btn-big"><i class="fas fa-play"></i></button>
+                <button id="next" class="action-btn"><i class="fas fa-forward"></i></button>
+                <button id="volume" class="action-btn volume-btn">
+                    <div class="volume-box">
+                        <div class="volume-container">
+                            <div class="volume-bar">
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button id="lyric" class="action-btn">
+                    <i class="fas fa-list-ul"></i>
+                </button>
+                <button id="seek" class="action-btn">
+                    <i class="fas fa-music"></i>
+                </button>
+            </div>
+            
+            <div class="music-word">
+                <div class="word-container">
+                    <ul class="ul-lyric">
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="side">
+            <div class="search-container">
+                <div class="search-box">
+                    <button id="search" class="searchBtn"><i class="fas fa-search"></i></button>
+                    <input name="searchInput" type="text" id="searchInput" class="searchInput" placeholder="搜索" />
+                </div>
+                
+                <ol class="songs-list">
+                    <!-- <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li> -->
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

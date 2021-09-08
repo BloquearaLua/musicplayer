@@ -1,0 +1,21 @@
+/* 修改谷歌浏览器滚动条 */
+/* 滚动条 */
+::-webkit-scrollbar { 
+    width: 6px; 
+    height: 8px; 
+    /* background:#a19d9d;  */
+ } 
+ /* 两头监听按钮 */
+ ::-webkit-scrollbar-button { 
+    display: none; 
+ } 
+ /* 滑块 */
+ ::-webkit-scrollbar-thumb { 
+    border-radius: 8px; 
+    background: #f0cfcf; 
+ } 
+ /* 滚动条轨道 */
+ ::-webkit-scrollbar-track { 
+    border-radius: 15px; 
+    /* background: #e7e4e4;  */
+ } 
